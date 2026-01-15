@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 Custom Implementation
+     
+     HotSeat-style app dock for Recents view
+     Displays persistent app shortcuts at bottom of overview screen
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recents_hotseat_dock"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginBottom="@dimen/recents_dock_margin_bottom"
+    android:orientation="horizontal"
+    android:background="@drawable/recents_dock_background"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:elevation="8dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- App launcher icon -->
+    <ImageView
+        android:id="@+id/dock_app_drawer"
+        android:layout_width="@dimen/recents_dock_icon_size"
+        android:layout_height="@dimen/recents_dock_icon_size"
+        android:layout_margin="@dimen/recents_dock_icon_margin"
+        android:src="@drawable/ic_allapps_icon"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/all_apps_button_label"
+        android:scaleType="centerInside" />
+
+    <!-- Recent app icon 1 (Chrome) -->
+    <FrameLayout
+        android:id="@+id/dock_app_1"
+        android:layout_width="@dimen/recents_dock_icon_size"
+        android:layout_height="@dimen/recents_dock_icon_size"
+        android:layout_margin="@dimen/recents_dock_icon_margin"
+        android:background="?android:attr/selectableItemBackgroundBorderless">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:contentDescription="App 1" />
+    </FrameLayout>
+
+    <!-- Recent app icon 2 (YouTube) -->
+    <FrameLayout
+        android:id="@+id/dock_app_2"
+        android:layout_width="@dimen/recents_dock_icon_size"
+        android:layout_height="@dimen/recents_dock_icon_size"
+        android:layout_margin="@dimen/recents_dock_icon_margin"
+        android:background="?android:attr/selectableItemBackgroundBorderless">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:contentDescription="App 2" />
+    </FrameLayout>
+
+    <!-- Recent app icon 3 (Messages) -->
+    <FrameLayout
+        android:id="@+id/dock_app_3"
+        android:layout_width="@dimen/recents_dock_icon_size"
+        android:layout_height="@dimen/recents_dock_icon_size"
+        android:layout_margin="@dimen/recents_dock_icon_margin"
+        android:background="?android:attr/selectableItemBackgroundBorderless">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:contentDescription="App 3" />
+    </FrameLayout>
+
+    <!-- Recent app icon 4 (Gmail) -->
+    <FrameLayout
+        android:id="@+id/dock_app_4"
+        android:layout_width="@dimen/recents_dock_icon_size"
+        android:layout_height="@dimen/recents_dock_icon_size"
+        android:layout_margin="@dimen/recents_dock_icon_margin"
+        android:background="?android:attr/selectableItemBackgroundBorderless">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:contentDescription="App 4" />
+    </FrameLayout>
+
+    <!-- Recent app icon 5 (Photos) -->
+    <FrameLayout
+        android:id="@+id/dock_app_5"
+        android:layout_width="@dimen/recents_dock_icon_size"
+        android:layout_height="@dimen/recents_dock_icon_size"
+        android:layout_margin="@dimen/recents_dock_icon_margin"
+        android:background="?android:attr/selectableItemBackgroundBorderless">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:contentDescription="App 5" />
+    </FrameLayout>
+
+    <!-- Recent app icon 6 (Maps) -->
+    <FrameLayout
+        android:id="@+id/dock_app_6"
+        android:layout_width="@dimen/recents_dock_icon_size"
+        android:layout_height="@dimen/recents_dock_icon_size"
+        android:layout_margin="@dimen/recents_dock_icon_margin"
+        android:background="?android:attr/selectableItemBackgroundBorderless">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:contentDescription="App 6" />
+    </FrameLayout>
+
+</LinearLayout>
